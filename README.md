@@ -1,63 +1,51 @@
 ## Mov2mov
-
+##translated by MacGuyver - 08-04-2023
 ![img.png](images/2.jpg)
 
-适用于Automatic1111/stable-diffusion-webui 的 Mov2mov 插件。
+Plugin for Automatic1111/stable-diffusion-webui's Mov2mov plugin.
 
-功能：
-- 直接从视频逐帧处理
-- 处理完成后打包成视频
-- 对视频进行抠图，合成等预处理和后处理
-  - 抠取人像
-  - 合成透明背景
-  - 合成原背景
-  - 合成绿幕
-  - 合成指定图片背景
-  - 合成指定视频背景
-- 逐帧处理prompt和negative_prompt：
-  - 以 *帧数:prompt|| 标记 *开始 ||结束
-  - *1:1girl||*100:2girl|| 第一帧使用1girl到第99帧，然后第100帧开始使用2girl到结束。
-  - negative_prompt也同样。
+Features:
 
-## 安装方法
+    Process frames directly from video.
+    Pack the processed frames back into a video file.
+    Preprocess and post-process videos by performing operations like segmentation, compositing, etc.
+    Extract portrait subject.
+    Composite transparent background.
+    Composite original background.
+    Composite green screen.
+    Composite specified image background.
+    Composite specified video background.
+    Process prompt and negative_prompt frame by frame:
+        Use *frame_number:prompt|| to mark the beginning and end of the prompt.
+        *1:1girl||*100:2girl|| means to use 1girl from frame 1 to frame 99, and use 2girl from frame 100 to the end.
+        The same applies to negative_prompt.
 
-1. 打开扩展（Extension）标签。
-2. 点击从网址安装（Install from URL）
-3. 在扩展的 git 仓库网址（URL for extension's git repository）处输入 
-4. 点击安装（Install）
-5. 重启 WebUI
+Installation:
 
-## 使用规约
+    Open the Extension tab.
+    Click on Install from URL.
+    Enter the git repository URL for the extension.
+    Click Install.
+    Restart WebUI.
 
-1. 请自行解决视频来源的授权问题，任何由于使用非授权视频进行转换造成的问题，需自行承担全部责任和一切后果，于mov2mov无关！
-2. 任何发布到视频平台的基于mov2mov制作的视频，都必须要在简介中明确指明用于转换的视频来源。例如：使用他人发布的视频，通过ai进行转换的，必须要给出明确的原视频链接；若使用的是自己/自己的视频，也必须在简介加以说明。
-3. 由输入源造成的侵权问题需自行承担全部责任和一切后果。注意，很多视频明确指出不可转载，复制！
-4. 请严格遵守国家相关法律法规，确保内容合法合规。任何由于使用本插件造成的法律责任，需自行承担全部责任和一切后果，于mov2mov无关！
+Usage:
 
-## 注意
+    You must obtain authorization for the video source yourself. Any problems caused by using unauthorized videos for conversion will be entirely your responsibility and have nothing to do with mov2mov!
+    Any videos made using mov2mov that are uploaded to video platforms must clearly indicate the video source in the description. For example, if you are using someone else's video and converting it with AI, you must provide a clear link to the original video; if you are using your own video, you must also provide an explanation in the description.
+    You are solely responsible for any infringement issues caused by the input source. Note that many videos clearly state that they cannot be reproduced or copied!
+    Please strictly abide by relevant national laws and regulations to ensure that the content is legal and compliant. Any legal liabilities caused by the use of this plugin will be entirely your responsibility and have nothing to do with mov2mov!
 
-- 打包后的视频在目录 `outputs/mov2mov-images/` 下
-- 可能需要安装opencv
-- ~~目录不可以有中文！！！~~
+Notes:
 
-## 常见问题
+    The packed video is stored in the directory outputs/mov2mov-images/.
+    OpenCV may need to be installed.
+    The directory cannot have Chinese characters!!!
 
-- ~~目前已知会和`Additional Networks`扩展冲突~~
+FAQ:
 
-## 说明
-- 视频教程：
-  - https://www.bilibili.com/video/BV1Mo4y1a7DF
-  - https://www.bilibili.com/video/BV1rY4y1C7Q5
-- qq频道: https://pd.qq.com/s/akxpjjsgd
+    Currently known to conflict with the Additional Networks extension.
 
-## 感谢
+Additional information:
 
-- modnet-entry: https://github.com/RimoChan/modnet-entry
-- MODNet: https://github.com/ZHKKKe/MODNet
-
-
-## 感觉不错,请作者喝杯咖啡
-
-
-<img src="images/wechat.png"  height="200" width="200">
-<img src="images/alipay.png"  height="200" width="200">
+    Video tutorials: https://www.bilibili.com/video/BV1Mo4y1a7DF and https://www.bilibili.com/video/BV1rY4y1C7Q5.
+    QQ channel: https://pd.qq.com/s/akxpjjsgd.
