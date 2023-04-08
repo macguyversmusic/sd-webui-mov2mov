@@ -22,7 +22,6 @@ from scripts.m2m_modnet import modnet_models
 
 id_part = "mov2mov"
 
-
 def create_toprow():
     with gr.Row(elem_id=f"{id_part}_toprow", variant="compact"):
         with gr.Column(elem_id=f"{id_part}_prompt_container", scale=6):
