@@ -2,7 +2,7 @@ function submit_mov2mov() {
     rememberGallerySelection('mov2mov_gallery')
     showSubmitButtons('mov2mov', false)
     showResultVideo('mov2mov', false)
-
+   
     var id = randomId()
     requestProgress(id, gradioApp().getElementById('mov2mov_gallery_container'), gradioApp().getElementById('mov2mov_gallery'), function () {
         showSubmitButtons('mov2mov', true)
