@@ -162,7 +162,7 @@ def create_modnet(id_part):
             background_image = gr.Image(label='Background', type='numpy', elem_id='modnet_background_image').style()
             background_movie = gr.Video(label='Background', elem_id='modnet_background_movie').style()
             with gr.Row():
-                gr.HTML(
+                gr.HTML():
                         <p>This feature is optional.<br>It works by cutting out the character and redrawing it separately.<br>After redrawing, you can choose to remove the background, merge with the original background, merge with a green screen, merge with an image, or merge with a video.<br>The zoom setting is for adjusting the background scale. If you don't know how to adjust it, just set it to the same as the original video!<br>The video synthesis method is also to choose the frame rate and extract images for synthesis. Please make sure the background video length is longer than the original video length.</p>
 
             with gr.Row():
