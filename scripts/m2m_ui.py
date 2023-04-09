@@ -163,7 +163,7 @@ def create_modnet(id_part):
             background_movie = gr.Video(label='Background', elem_id='modnet_background_movie').style()
             with gr.Row():
                 gr.HTML(
-                    value='<p>这个功能是可选功能.<br >作用是把人物抠出来，单独重绘<br >重绘完可以选择清除背景，合成原背景，合成绿幕，合成图片，合成视频<br >缩放设置是设置背景的缩放，如果你不懂怎么调试，就设置成和原视频一样的吧！<br >合成视频方式也是选择帧率，提取图片进行合成。请注意保证背景视频长度大于原视频长度</p>')
+                        <p>This feature is optional.<br>It works by cutting out the character and redrawing it separately.<br>After redrawing, you can choose to remove the background, merge with the original background, merge with a green screen, merge with an image, or merge with a video.<br>The zoom setting is for adjusting the background scale. If you don't know how to adjust it, just set it to the same as the original video!<br>The video synthesis method is also to choose the frame rate and extract images for synthesis. Please make sure the background video length is longer than the original video length.</p>
 
             with gr.Row():
                 enable = gr.Checkbox(label='Enable', value=False, elem_id=f"{id_part}_enable")  # 启用就是提取人物了
